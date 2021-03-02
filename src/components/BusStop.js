@@ -10,11 +10,11 @@ function BusStop({ id }) {
     const fetchInfo = useFetchBusStopInfo;
   
     useEffect(() => {
-        fetchInfo(id).then(info => { info && setBuses(info); console.log(info) })
+        fetchInfo(id).then(info => setBuses(info));
     }, [id, fetchInfo])
 
     interval(() => {
-        fetchInfo(id).then(info => { info && setBuses(info); console.log(info) })
+        fetchInfo(id).then(info => setBuses(info));
     }, 30000);
 
     return (
