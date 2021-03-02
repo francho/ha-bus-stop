@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/ha-bus-stop/static/css/main.dd284cb6.chunk.css",
-    "main.js": "/ha-bus-stop/static/js/main.14d52d1c.chunk.js",
-    "main.js.map": "/ha-bus-stop/static/js/main.14d52d1c.chunk.js.map",
+    "main.css": "/ha-bus-stop/static/css/main.4dca885b.chunk.css",
+    "main.js": "/ha-bus-stop/static/js/main.b503a045.chunk.js",
+    "main.js.map": "/ha-bus-stop/static/js/main.b503a045.chunk.js.map",
     "runtime-main.js": "/ha-bus-stop/static/js/runtime-main.784d9a57.js",
     "runtime-main.js.map": "/ha-bus-stop/static/js/runtime-main.784d9a57.js.map",
     "static/js/2.eeaa5084.chunk.js": "/ha-bus-stop/static/js/2.eeaa5084.chunk.js",
@@ -10,13 +10,13 @@
     "static/js/3.7fe6731d.chunk.js": "/ha-bus-stop/static/js/3.7fe6731d.chunk.js",
     "static/js/3.7fe6731d.chunk.js.map": "/ha-bus-stop/static/js/3.7fe6731d.chunk.js.map",
     "index.html": "/ha-bus-stop/index.html",
-    "static/css/main.dd284cb6.chunk.css.map": "/ha-bus-stop/static/css/main.dd284cb6.chunk.css.map",
+    "static/css/main.4dca885b.chunk.css.map": "/ha-bus-stop/static/css/main.4dca885b.chunk.css.map",
     "static/js/2.eeaa5084.chunk.js.LICENSE.txt": "/ha-bus-stop/static/js/2.eeaa5084.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.784d9a57.js",
     "static/js/2.eeaa5084.chunk.js",
-    "static/css/main.dd284cb6.chunk.css",
-    "static/js/main.14d52d1c.chunk.js"
+    "static/css/main.4dca885b.chunk.css",
+    "static/js/main.b503a045.chunk.js"
   ]
 }
