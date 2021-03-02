@@ -1,5 +1,5 @@
 import './BusStop.css';
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { useInterval } from '../hooks/useInterval';
 import { useFetchBusStopInfo } from '../hooks/useFechBusStopInfo';
 
@@ -9,8 +9,12 @@ function BusStop({ id }) {
     const interval = useInterval;
     const fetchInfo = useFetchBusStopInfo;
   
+    useEffect(() => {
+        fetchInfo(id).then(info => { info && setBuses(info); console.log(info) })
+    }, [id, fetchInfo])
+
     interval(() => {
-        fetchInfo(id).then(info => setBuses(info));
+        fetchInfo(id).then(info => { info && setBuses(info); console.log(info) })
     }, 30000);
 
     return (

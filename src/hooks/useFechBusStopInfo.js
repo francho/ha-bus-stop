@@ -2,8 +2,13 @@
 export function useFetchBusStopInfo(busStopId) {
     const apiUrl = `http://www.zaragoza.es/api/recurso/urbanismo-infraestructuras/transporte-urbano/poste/tuzsa-${busStopId}.json`
     return fetch(apiUrl)
-        .then((response) => response.json())
+        .catch (e => {
+            console.log(e);
+            return null;
+            })
+        .then((response) => response ? response.json() : { id: null, title: '', destinos: [] })
         .then((data) => {
+            if(!data) { return null }
             const busesInfo = {
                 id: data.id,
                 title: data.title,
@@ -21,6 +26,5 @@ export function useFetchBusStopInfo(busStopId) {
                 return minutesA - minutesB;
             });
             return (busesInfo);
-        })
-        .catch(e => console.log(e))
+        });
 }
