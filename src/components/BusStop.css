@@ -16,6 +16,7 @@
 }
 
 .frequency {
+  align-items: center;
   color: rgb(225, 225, 225);
   display: flex;
   font-family: 'Roboto', 'Noto', sans-serif;
@@ -27,7 +28,7 @@
 }
 
 .bus-line {
-  font-size: 32px;
+  font-size: 24px;
   padding: 5px;
   background-color: gray;
 }

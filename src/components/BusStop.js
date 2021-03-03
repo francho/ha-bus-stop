@@ -21,8 +21,8 @@ function BusStop({ id }) {
         <>
             <h2 className="title">{buses.title}</h2>
             {
-                buses.freqs.map(bus =>
-                    <div key={ bus.id } className="frequency">
+                buses.freqs.map((bus, i) =>
+                    <div key={ `${bus.id}-${i}` } className="frequency">
                     <span className={`bus-line bus-line-${bus.linea}`}>{bus.linea}</span> {bus.time}
                 </div>)
             }

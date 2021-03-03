@@ -7,7 +7,8 @@ function App() {
   const [ids, setIds] = useState([])
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
-    const ids = params.get("ids").split(',');
+    const paramsIds = params.get("ids",[])
+    const ids = paramsIds ? paramsIds.split(',') : [];
     setIds(ids);
   }, [])
 
